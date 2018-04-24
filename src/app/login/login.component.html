@@ -1,0 +1,18 @@
+<div id="main" class="container-fluid">
+  <div class="sub">
+    <!--<div class="circle">
+        <img class="image" src="../assets/720.png">
+      </div>-->
+     <div class="form">
+       <form>
+           <h3>Log In</h3>
+           <label>Username:</label><br>
+           <div class="input"><input id="name" name="name" type="text" required [(ngModel)]="name" placeholder="Enter your Name"></div>
+           <label>Password:</label><br>
+           <div class="input"><input id="password" name="password" type="password" required [(ngModel)]="password" placeholder="Enter your Password"></div><br><br>
+           <button class="logged" type="submit" (click)="loginUser()">Log In</button>
+       </form>
+    </div>
+    <div class="line"></div>
+  </div>
+</div> 

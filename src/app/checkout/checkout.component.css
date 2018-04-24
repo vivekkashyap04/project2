@@ -1,0 +1,26 @@
+div .payment{
+    width:250px;
+    height:30px;
+    background-color:aliceblue;
+    color:orange;
+    margin:3px;
+    padding: 2px;
+    border-radius: 5px;
+    border-bottom: 2px solid black;
+    text-decoration-style: none;
+}
+.checked:hover{
+    opacity: 0.5;
+    cursor: pointer;
+    padding: 3px;
+    color:blue;
+    text-decoration: none;
+    width:30px;
+}
+div #btn{
+    width:200px;
+    margin-left: 10px;
+    padding: 2px;
+    margin: 5px;
+}
+

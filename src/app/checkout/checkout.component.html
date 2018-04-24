@@ -1,0 +1,9 @@
+<div class="main">
+  <div></div>
+  <div class="payment"><input class="checked" type="radio" [(ngModel)]="x" name="payment" value="credit/debit card"><i class="fa fa-credit-card"></i>credit/debit card</div>
+  <div class="payment"><input class="checked" type="radio" [(ngModel)]="x" name="payment" value="Net Banking">Net Banking</div>
+  <div class="payment"><input class="checked" type="radio" [(ngModel)]="x" name="payment" value="Online banking">Online banking</div>
+  <div class="payment" ><input class="checked" type="radio" [(ngModel)]="x" name="payment" value="EMI">EMI</div>
+  <button id="btn" class="payment"  type="submit" (click)="confirm()">Confirm Payment</button>
+  <div></div>
+</div>

@@ -1,0 +1,35 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 col-lg-9 col-sm-12">
+            <h2>Shopping List</h2>
+            <div *ngFor="let list of lists;let i=index" class="main">
+                <img [src]="list.image" class="image">
+                   <h5>Name:{{list.name|uppercase}}</h5>
+                    <span>Price:{{list.price|currency}}</span>
+                    <button class="btt"  type="submit" (click)="addToCart(list.price)">Add to cart</button>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3 col-sm-12">
+            <h2>Cart</h2>
+              <div class="cart">
+                  <table border="2px solid black" style="border-radius:3px">
+                      <tr>
+                          <td>Item Price: </td> 
+                         <td>{{select|currency}}</td>
+                        </tr>
+                    <tr>
+                        <td>Qty:</td> 
+                        <td>{{qty}}</td>
+                    </tr>
+                    <tr>
+                        <td>Total: </td>
+                        <td>{{price|currency}}</td>
+                    </tr>
+                </table>
+                    <button class="checkout" type="submit" (click)="checkOut()">Buy Now</button>
+                    <button type="reset" class="reset" (click)="reset()">Reset</button>
+              </div>
+        </div>
+  </div>
+</div>
